@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
-<body>
-    <h1>hello</h1>
+<body class="bg-gray-100 text-center">
+    <div id="assignment">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-purple-700 mb-8">Our Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="service-card bg-white rounded-lg shadow-md p-6 transform transition-transform duration-500 cursor-pointer" 
+                 onmouseover="rotateCard(this)" onmouseout="resetCard(this)">
+                <img src="emergency_icon.png" alt="Emergency Plumbing" class="w-12 h-12 mx-auto mb-4">
+                <h2 class="text-xl font-semibold mb-2">Emergency Plumbing Services</h2>
+                <p class="text-gray-600 text-sm">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+                <button class="mt-4 bg-purple-700 text-white py-2 px-4 rounded-lg hover:bg-purple-800">Explore This Service</button>
+            </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 transform transition-transform duration-500 cursor-pointer" 
+                 onmouseover="rotateCard(this)" onmouseout="resetCard(this)">
+                <img src="plumbing_icon.png" alt="Plumbing and Drains" class="w-12 h-12 mx-auto mb-4">
+                <h2 class="text-xl font-semibold mb-2">Plumbing and Drains</h2>
+                <p class="text-gray-600 text-sm">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                <button class="mt-4 bg-purple-700 text-white py-2 px-4 rounded-lg hover:bg-purple-800">Explore This Service</button>
+            </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 transform transition-transform duration-500 cursor-pointer" 
+                 onmouseover="rotateCard(this)" onmouseout="resetCard(this)">
+                <img src="water_damage_icon.png" alt="Water Damage" class="w-12 h-12 mx-auto mb-4">
+                <h2 class="text-xl font-semibold mb-2">Water Damage</h2>
+                <p class="text-gray-600 text-sm">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                <button class="mt-4 bg-purple-700 text-white py-2 px-4 rounded-lg hover:bg-purple-800">Explore This Service</button>
+            </div>
+            <div class="service-card bg-white rounded-lg shadow-md p-6 transform transition-transform duration-500 cursor-pointer" 
+                 onmouseover="rotateCard(this)" onmouseout="resetCard(this)">
+                <img src="water_heaters_icon.png" alt="Water Heaters" class="w-12 h-12 mx-auto mb-4">
+                <h2 class="text-xl font-semibold mb-2">Water Heaters</h2>
+                <p class="text-gray-600 text-sm">Trust us for repair and replacement of gas, electric, and tankless water heaters.</p>
+                <button class="mt-4 bg-purple-700 text-white py-2 px-4 rounded-lg hover:bg-purple-800">Explore This Service</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
